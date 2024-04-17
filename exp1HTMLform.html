@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title> Registration form </title>
+	</head>
+	<body>
+	<form action="check.jsp" method="post">
+
+		<table cellpadding="8">
+			<tr>
+				<td> First Name </td>
+				<td><input type="text" name="T1">(max 30 characters a-z and A-Z)</td>
+			</tr>
+
+			<tr>
+				<td>Middle Name </td>
+				<td><input type="text" name="T2"></td>
+			</tr>	
+
+			<tr>
+				<td>Date of Birth </td>
+				<td>
+					<select name="day">
+						<option>Day</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>31</option>
+					</select>
+
+					<select name="month">
+						<option>Month</option>
+						<option>jan</option>
+						<option>feb</option>
+						<option>march</option>
+						<option>april</option>
+						<option>may</option>
+						<option>June</option>
+						<option>Dec</option>
+					</select>
+
+					<select name="year">
+						<option>Year</option>
+						<option>2000</option>
+						<option>2001</option>
+						<option>2002</option>
+						<option>2003</option>
+						<option>2004</option>
+						<option>2005</option>
+						<option>2006</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Gender </td>
+				<td>
+					Male<input type="radio" name="Gender" value="male">
+					Female<input type="radio" name="Gender" value="female">
+				</td>
+			</tr>	
+
+
+			<tr>
+				<td>Address </td>
+				<td> <textarea rows="5" cols="30"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Hobbies </td>
+				<td> coding<input type="checkbox" name="c1">
+					Cricket<input type="checkbox" name="c2">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	</body>
+</html>
