@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Card effect </title>
+	<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<style>
+
+		.card-container{
+						display:flex;
+		 				flex-wrap: wrap;
+						justify-content: center;
+						}
+
+		.card{
+			width:300px;
+			height: 400px;
+			perspective: 1000px;
+			margin: 20px;
+		}
+
+		.card-inner{
+			width: 100%;
+			height: 100%;
+			transition:transform 0.5s;
+			transform-style: preserve-3d;
+		}
+
+		/*.card:hover  .card-back {
+			transform: rotate(180deg);
+		}*/
+
+		.card:hover .card-inner {
+			transform: rotateY(180deg);
+		}
+
+		.card-front, .card-back{
+			width:300px;
+			height: 400px;
+			position:absolute;
+			backface-visibility: hidden;
+		}
+
+		.card-back{
+			transform: rotateY(180deg);
+		}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card-container">
+				<div class="card">
+					<div class="card-inner">
+						
+						<div class="card-front">
+							<img src="tvd.jpg" class="card-img-top" alt="front Image">
+							<div class="card-body">
+								<h5 class="card-title"> The Vampire diaries </h5>
+								<p> ONLY ON NETFLIX </p>
+							</div>
+						</div>
+							
+							<div class="card-back">
+								<img src="tvd2.jpg" class="card-img-top" alt="front Image">
+								<div class="card-body">
+								<h5 class="card-title"> The Vampire Diaries-Season 2 </h5>
+								<p> A must Watch </p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
